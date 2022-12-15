@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MEZZ Boards</title>
+<style type="text/css">
+	body { background-color:#d0d0d0; font-family:sans-serif; }
+	h1 { margin:0; font-size:24px }
+	h2 { margin-top:15px; font-size:20px; font-weight:normal; border-bottom:1px solid #ff9040 }
+	h3 { margin-top:15px; font-size:18px; font-weight:normal }
+	p { font-size:14px }
+	li { font-size:14px }
+	a { color:#6060d0; text-decoration:none }
+	a:hover { text-decoration:underline }
+
+	.header { padding: 20px; text-align: center; background: #1e73be; color: white; }
+	.header h1 { font-size: 40px; 	}
+
+	/* Ensure proper sizing */
+	* { box-sizing: border-box; }
+
+	/* Column container */
+	.row { display: flex; flex-wrap: wrap; }
+
+	/* Sidebar/left column */
+	.side { height: 100%; width: 180px; position: fixed; background-color: white; padding: 20px; }
+	.side a { float: left; display: block; color: #002b80; text-align: left; padding: 10px 10px; text-decoration: none; }
+	.side a:hover { background-color: #ddd; color: #1e73be; }
+
+    /* bottom help section */
+	.fixed_bot { position: fixed; bottom: 0; left: 0; width: 180px; padding: 20px }
+	.fixed_bot  p {font-size: 11px; }
+	.fixed_bot  a {font-size: 12px; }
+
+	/* Main column */
+	.main { margin-left: 180px; padding: 20px; }
+
+	.w3-card-2{
+		background-color:white;
+		border-radius:3px;
+		padding: 10px;
+		margin-bottom: 20px;
+		box-shadow:0 4px 10px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)
+	}
+
+	.tooltip { position: relative; display: inline-block; border-bottom: 1px dotted black; }
+	.tooltip .tooltiptext {
+		visibility: hidden;
+		width: 250px;
+		background-color: #1e73be;
+		color: white;
+		text-align: left;
+		border-radius: 6px;
+		padding: 5px 5px;
+		position: absolute;
+		z-index: 1;
+	}
+	.tooltip:hover .tooltiptext { visibility: visible; width: 250px; top: 100%; left: 80%; margin-left: -60px;	}
+
+
+</style>
+</head>
+
+
+<body>
+
+<div class="header">
+	<h1>MEZZ Boards</h1>
+</div>
+
+<div class="row">
+	<div class="side">
+		<img src="xialogo.jpg" width="140" height=auto alt="XIA Logo">
+		<p> </p>
+		<a href="/index.html"> Early Adoper Home </a>
+		<a href="/mezz.html"> MEZZ Boards </a>
+		<a href="https://ohwr.org/project/pz-tio/wikis/home"> PZ-TIO on OHWR </a>
+		<a> (Experimental page in progress) </a>
+
+	  <div class="fixed_bot">
+			<h2>Notes</h2>
+			<div class="tooltip"> <b style="font-size: 11px"> try the tooltips</b>
+				<span class="tooltiptext">Hoover over bold underlined text for more information </span>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="main">
+
+		<div class="w3-card-2">
+			<h2> MEZZ boards </h2>
+			
+			<p> The MEZZ boards are small, flexible adapter boards for analog or digital signals. They include
+			<ul>
+				<li> <a href=#MEZZ01">MEZZ01</a>: 8x SMB to 0.1in header			</li>
+				<li> <a href=#MEZZ02">MEZZ02</a>: 8x SMB to 0.1in header or FCS8 microcoax			</li>
+				<li> <a href=#MEZZ03">MEZZ03</a>: 8x SMB to 0.1in header			</li>
+				<li> <a href=#MEZZ04">MEZZ04</a>: GRF1 ganged RF to 0.1in header			</li>
+			</ul> 
+
+		</div>
+
+		<div class="w3-card-2">  <a name=MEZZ01"></a>
+			<h2> MEZZ01 </h2>  
+				 <p> <img src="MEZZ01_22a.jpg" width="200" height=auto alt="MEZZ01">
+			<h3> MEZZ01 comes in 4 standard configurations</h3>
+			 
+			<ul>
+				<li> <b>LBSJ</b>: 8x <b>LEMO</b> coax input/output buffered to/from 34x 0.1in header, direction jumper selectable  <br>
+	   			Intended for exernal digital I/O signals connecting to headers on the Pixie-16 x1/x2 or MZTIO boards  </li>
+				<li> <b>SBJS</b>: 8x <b>SMB</b> coax input/output buffered to/from 34x 0.1in header, direction jumper selectable	 <br>  
+				   Intended for exernal digital I/O signals connecting to headers on the Pixie-16 x1/x2 or MZTIO boards  </li>
+				<li> <b>SCER</b>: 8x SMB coax to/from 34x 0.1in header (direct copper to <b>even</b> pins), stackable with SCOS	   <br>  
+				   Intended for analog signals </li>
+				<li> <b>SCOS</b>: 8x SMB coax to/from 34x 0.1in header (direct copper to <b>odd</b> pins), stackable with SCER		  <br>  
+				   Intended for analog signals </li>
+
+			 </ul>
+
+			 <h3>Applications</h3>	
+			 <ul>
+				<li> Trigger I/O for Pixie-16 x1/x2 and MZTIO				 </li>
+				<li> Conversion of analog coax signals to 0.1in flat cables or vice versa	 </li>
+				<li> SCER and SCOS can stack to convert 16x SMB to 16x signals in a 34x flat cable	 </li>
+				<li> 5 SCER/SCOS stacks can be mounted on a 19in panel
+					<p> <img src="MEZZ01_panel.jpg" width="500" height=auto alt="MEZZ01 SCER+SCOS panel">
+				</li>
+
+		    </ul>
+
+			 <h3>Schematic</h3>
+			 coming soon
+
+		</div>
+
+		<div class="w3-card-2">	    <a name=MEZZ02"></a>
+			<h2> MEZZ02 </h2>		  
+				 <p> <img src="MEZZ02_22a.jpg" width="200" height=auto alt="MEZZ01">
+			<h3> MEZZ01 comes in 3 standard configurations</h3>
+			 
+			<ul>
+				<li> 8x SMB coax to/from 34x 0.1in header (direct copper to <b>even or odd</b> pins), stackable 	   <br>  
+				   Intended for analog signals </li>
+				<li> 34x 0.1 header to/from FCS8 microcoax connector (direct copper to <b>even or odd</b> pins), stackable 		  <br>  
+				   Intended for analog signals </li>
+				<li> 8x SMB coax to/from FCS8 microcoax connector (direct copper) 		  <br>  
+				   Intended for analog signals </li>
+
+			 </ul>
+
+			 <h3>Applications</h3>	
+			 <ul>
+
+				<li> Conversion of analog coax signals to 0.1in flat cables or FCF8 cables	 </li>
+				<li> Signal adapter board for some Pixie-16 x2 or Pixie-Net XL variants	 </li>
+				<li> Equivalent to MEZZ01 but with additional FCS8 connector	 </li>
+
+
+		    </ul>
+
+			 <h3>Schematic</h3>
+			 coming soon
+
+		</div>
+
+
+		<div class="w3-card-2">	   <a name=MEZZ03"></a>
+			<h2> MEZZ03 </h2>
+				 <p> <img src="MEZZ03_22a.jpg" width="200" height=auto alt="MEZZ03">
+			<h3> MEZZ01 comes in 1 standard configuration</h3>
+			 
+			<ul>
+				<li> 8x <b>SMB</b> (vertical) coax input/output to/from 16x 0.1in header, direct copper  <br>
+	   			Intended for analog signals </li>
+			 </ul>
+
+			 <h3>Applications</h3>	
+			 <ul>
+				<li> Conversion of analog coax signals to 0.1in flat cables </li>
+				<li> Signal adapter board for some Pixie-16 x2 or Pixie-Net XL variants	 </li>
+				<li> Can be mounted on Pixie-Net XL front panel </li>
+				<li> Similar to MEZZ01 but no buffer, smaller flat cable	 </li>
+
+		    </ul>
+
+			 <h3>Schematic</h3>
+			 coming soon
+
+		</div>
+
+
+		<div class="w3-card-2">	   <a name=MEZZ04"></a>
+			<h2> MEZZ04 </h2>
+				 <p> <img src="MEZZ04_22a.jpg" width="200" height=auto alt="MEZZ04">
+			<h3> MEZZ04 comes in 1 standard configuration</h3>
+			 
+			<ul>
+				<li> <b>GRF1</b> (vertical) 8x ganged coax input/output to/from 16x 0.1in header, direct copper  <br>
+	   			Intended for analog signals </li>
+			 </ul>
+
+			 <h3>Applications</h3>	
+			 <ul>
+				<li> Conversion of analog coax signals to 0.1in flat cables 	 </li>
+				<li> Signal adapter board for some Pixie-16 x2 or Pixie-Net XL variants	 </li>
+				<li> Can be mounted on Pixie-Net XL front panel </li>
+				<li> Equivalent to MEZZ03 but smaller, bundled RF connector(s)	 </li>
+
+		    </ul>
+
+			 <h3>Schematic</h3>
+			 coming soon
+
+		</div>
+
+
+
+	</div>
+</div>
+</body>
+
+</html>
