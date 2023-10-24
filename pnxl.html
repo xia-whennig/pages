@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pixie-Net XL</title>
+<style type="text/css">
+	body { background-color:#d0d0d0; font-family:sans-serif; }
+	h1 { margin:0; font-size:24px }
+	h2 { margin-top:15px; font-size:20px; font-weight:normal; border-bottom:1px solid #ff9040 }
+	h3 { margin-top:15px; font-size:18px; font-weight:normal }
+	p { font-size:14px }
+	li { font-size:14px }
+	a { color:#6060d0; text-decoration:none }
+	a:hover { text-decoration:underline }
+
+	.header { padding: 20px; text-align: center; background: #1e73be; color: white; }
+	.header h1 { font-size: 40px; 	}
+
+	/* Ensure proper sizing */
+	* { box-sizing: border-box; }
+
+	/* Column container */
+	.row { display: flex; flex-wrap: wrap; }
+
+	/* Sidebar/left column */
+	.side { height: 100%; width: 180px; position: fixed; background-color: white; padding: 20px; }
+	.side a { float: left; display: block; color: #002b80; text-align: left; padding: 10px 10px; text-decoration: none; }
+	.side a:hover { background-color: #ddd; color: #1e73be; }
+
+    /* bottom help section */
+	.fixed_bot { position: fixed; bottom: 0; left: 0; width: 180px; padding: 20px }
+	.fixed_bot  p {font-size: 11px; }
+	.fixed_bot  a {font-size: 12px; }
+
+	/* Main column */
+	.main { margin-left: 180px; padding: 20px; }
+
+	.w3-card-2{
+		background-color:white;
+		border-radius:3px;
+		padding: 10px;
+		margin-bottom: 20px;
+		box-shadow:0 4px 10px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)
+	}
+
+	.tooltip { position: relative; display: inline-block; border-bottom: 1px dotted black; }
+	.tooltip .tooltiptext {
+		visibility: hidden;
+		width: 250px;
+		background-color: #1e73be;
+		color: white;
+		text-align: left;
+		border-radius: 6px;
+		padding: 5px 5px;
+		position: absolute;
+		z-index: 1;
+	}
+	.tooltip:hover .tooltiptext { visibility: visible; width: 250px; top: 100%; left: 80%; margin-left: -60px;	}
+
+
+</style>
+</head>
+
+
+<body>
+
+<div class="header">
+	<h1>Pixie-Net XL</h1>
+</div>
+
+<div class="row">
+	<div class="side">
+		<img src="xialogo.jpg" width="140" height=auto alt="XIA Logo">
+		<p> </p>
+		<a href="https://xia-whennig.github.io/pages/index.html"> Scientists Home </a>
+		<a href="https://xia-whennig.github.io/pages/pnxl.html"> Pixie-Net XL </a>
+		<a href="https://xia-whennig.github.io/pages/mezz.html"> MEZZ adapter Boards </a>
+		<a href="https://xia-whennig.github.io/pages/trig.html"> Clock/Trigger I/O Boards </a>
+		<a href="https://xia-whennig.github.io/pages/WR.html"> White Rabbit and PTP </a>
+		<a href="https://ohwr.org/project/pz-tio/wikis/home"> PZ-TIO on OHWR </a>
+		<a> (Experimental page in progress) </a>
+
+	  <div class="fixed_bot">
+			<h2>Notes</h2>
+			<div class="tooltip"> <b style="font-size: 11px"> try the tooltips</b>
+				<span class="tooltiptext">Hoover over bold underlined text for more information </span>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="main">
+
+		<div class="w3-card-2">  <a name=PNXL"></a>
+			<h2> Overview </h2>
+			<p>	<img src="Pixie_Net_XL_IsoL.jpg" width="300" height=auto alt="Pixie-Net XL">
+			<p> The <a href="https://xia.com/products/pixie-net-xl/"> Pixie-Net XL </a> is a multi-channel digital 
+			pulse processor for radiation detectors in desktop format.
+ 		   It is a larger and faster version of the <a href="https://xia.com/products/pixie-net/"> Pixie-Net. </a> 
+			
+			<ul>
+				<li> Firmware/software downloads and the user manual are available <a href="https://github.com/xia-whennig/PNXL-Releases"> here </a>   </li>
+				<li> A product flyer is <a href="XIA-Pixie-Net-XL-FLYER-2022-10-07.pdf"> here </a>   </li>
+			</ul>
+			
+			<p>The Pixie-Net XL is designed for 
+ 
+			<ul>
+				<li> On-board MCA spectra.	   </li>
+	 			<li> Waveform capture. 			  </li>
+			   <li> Online Constant Fraction Discrimination and Pulse Shape Analysis.   </li>
+	 			<li> Local USB and SD storage.				 </li>
+	 			<li> Web interface.								   </li>
+	 			<li> 1 or 10 Gbps Ethernet output for list mode data.	  </li>
+				<li> Sub-nanosecond Timing Resolution.							   </li>
+				<li> High Throughput.	</li>
+		 </ul>
+			<p> Currently available variants: 
+				<ul>				   
+					 <li>  8 channels, 14bit, 125 MHz, variable gain and offset </li>
+					 <li> 16 channels, 14bit, 250 MHz, fixed gain and variable offset </li>
+					 <li> 16 channels, 14bit, 250 MHz, fixed gain and variable offset, White Rabbit clock synchronization	</li>
+ 			  </ul>
+			
+			
+			 <div class="tooltip"> <b style="font-size: 14px"> White Rabbit  </b>
+				<span class="tooltiptext">The high accuracy profile of the IEEE 1588 Precision Time Protocol (PTP) </span>
+			</div>
+			<b style="font-size: 14px"> can be used for time synchronization of multiple units (1Gbps only). <br>
+		   Traditional clock/trigger synchronization with dedicated cables is also possible </b>
+			
+		</div>
+
+				
+
+		<div class="w3-card-2">  <a name=inputs"></a>
+			<h2> Performance </h2>
+							 
+				<p> <img src="MCASpectrumDisplay6.jpg" width="600" height=auto alt="timing bars">
+				<p> Multi-source spectrum with HPGe detector. (Results vary for detector and variant)
+				<br>	
+			
+				<p> <img src="timing_bars.jpg" width="600" height=auto alt="timing bars">
+				<p> A recent paper describing the Pixie-Net XL's timing performance is <a href="XIA_RT2022_CR.pdf"> here </a> 
+				<br>
+
+
+
+				<p> <img src="Throughput_10G.jpg" width="600" height=auto alt="timing bars">
+				<p> List mode data throughput (with 1us waveforms, saved to disk) per SFP port. See user manual for details
+				<br>
+
+		</div>
+
+		<div class="w3-card-2">  <a name=inputs"></a>
+
+			<h2> Input Connector Options </h2>
+			<ul>
+				<li> <b> 8-channel, 14bit, 125 MHz variant: 8 SMB connectors  </b> <br>
+				This type of SMB inputs is used for all 8-channel versions of the Pixie-Net XL
+					<p> <img src="PNXL_front_DB01.jpg" width="300" height=auto alt="8-14-125 input connectors">	 
+				</li>
+				<li> <b> 16-channel, 14bit, 250 MHz variant: 0.1 in headers </b> <br>
+				In most cases, input connections can be made with a 0.1 in ribbon cable 
+				(available commercially as plain, shielded, or twisted pair). <br> 
+				<p> <img src="PNXL_front_DB04Ca.jpg" width="300" height=auto alt="16-14-125 input connectors">	  <br> <br> 
+				In some cases, adapters to coaxial cables are desired. 
+				XIA can provide <a href="https://xia-whennig.github.io/pages/mezz.html"> MEZZ adapter Boards </a> and special front panels for this purpose.	<br> <br>
+				
+				<u> MEZZ03:</u>
+				The picture below shows the Pixie-Net XL with MEZZ03 integrated in the right side of the front panel: 
+				Coaxial cables can connect to MEZZ03's row of SMB connectors and a short ribbon cable 
+				can make the connection from MEZZ03's 0.1 in header (black) to the Pixie-Net XL 0.1 in input header (white) <br> 
+				This configuration is mechanically the most stable and allows quick changes from ribbon cable to SMB cables. <br> <br>
+				
+				<u> MEZZ04:</u>
+				MEZZ04 can attach to the Pixie-Net XL on the outside as shown for the left input header. Adapters for the GRF1 ganged cable to
+		      other coaxial cable styles are commercially available 
+				<p> <img src="PNXL_front_DB04C_MEZZ03_04a.jpg" width="300" height=auto alt="16-14-250 input connectors">	 
+				</li>
+
+				<li> <b> [Experimental] 16-channel, 14bit, 250 MHz variant with differential inputs: micro HDMI </b> <br>
+				Commercially available HDMI cables can be used to bring in differential signals. <br>
+				Contact XIA for adapters from single ended signals to differential HDMI.  <br>
+				Also available soon with 0.1 in headers. <br>
+				<p> <img src="PNXL_front_DB02A.jpg" width="300" height=auto alt="16-14-250 input connectors, differential">	 
+				</li>
+			</ul>
+
+
+
+		</div>
+
+
+
+
+
+	</div>
+</div>
+</body>
+
+</html>

@@ -4,7 +4,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>XIA Early Adopter Products</title>
+	<title>XIA For Scientists</title>
 <style type="text/css">
 	body { background-color:#d0d0d0; font-family:sans-serif; }
 	h1 { margin:0; font-size:24px }
@@ -67,14 +67,15 @@
 <body>
 
 <div class="header">
-	<h1>XIA Early Adopter Products</h1>
+	<h1>XIA For Scientists</h1>
 </div>
 
 <div class="row">
 	<div class="side">
 		<img src="xialogo.jpg" width="140" height=auto alt="XIA Logo">
 		<p> </p>
-		<a href="https://xia-whennig.github.io/pages/index.html"> Early Adoper Home </a>
+		<a href="https://xia-whennig.github.io/pages/index.html"> Scientists Home </a>
+		<a href="https://xia-whennig.github.io/pages/pnxl.html"> Pixie-Net XL </a>
 		<a href="https://xia-whennig.github.io/pages/mezz.html"> MEZZ adapter Boards </a>
 		<a href="https://xia-whennig.github.io/pages/trig.html"> Clock/Trigger I/O Boards </a>
 		<a href="https://xia-whennig.github.io/pages/WR.html"> White Rabbit and PTP </a>
@@ -93,7 +94,6 @@
 	<div class="main">
 
 		<div class="w3-card-2">
-			<h2> Early Adopter Products </h2>
 			<p> <div class="tooltip"> <b>"Screenshots taken from a version you do not own"</b>
 				<span class="tooltiptext">T. Pratchett, "Only you can save mankind"; disclaimer on a fictitious video game.</span>
 			</div>
@@ -114,78 +114,12 @@
 
 			<p> Featured on this page:
 			<ul>
-				<li> <a href=#PNXL">Pixie-Net XL</a> 			</li>
 				<li> <a href=#WRforPNXL">Network Time Synchronization for Radiation Detectors</a>  			</li>		  
 			</ul>
 
 		</div>
 
-		<div class="w3-card-2">  <a name=PNXL"></a>
-			<h2> Pixie-Net XL </h2>
-			<p>	<img src="Pixie_Net_XL_IsoL.jpg" width="300" height=auto alt="Pixie-Net XL">
-			<p> The <a href="https://xia.com/products/pixie-net-xl/"> Pixie-Net XL </a> is a multi-channel digital 
-			pulse processor for radiation detectors in desktop format.
- 		   It is a larger and faster version of the <a href="https://xia.com/products/pixie-net/"> Pixie-Net. </a> It is designed for 
- 
-			<ul>
-				<li> On-board MCA spectra.	   </li>
-	 			<li> Waveform capture. 			  </li>
-			   <li> Online Constant Fraction Discrimination and Pulse Shape Analysis.   </li>
-	 			<li> Local USB and SD storage.				 </li>
-	 			<li> Web interface.								   </li>
-	 			<li> 1 or 10 Gbps Ethernet output for list mode data.	  </li>
-				<li> Sub-nanosecond Timing Resolution.							   </li>
-			 </ul>
-			
-			 <div class="tooltip"> <b style="font-size: 14px"> White Rabbit  </b>
-				<span class="tooltiptext">The high accuracy profile of the IEEE 1588 Precision Time Protocol (PTP) </span>
-			</div>
-			<b style="font-size: 14px"> can be used for time synchronization of multiple units. </b>
-			
-			<ul>
-				<li> Firmware/software downloads and the user manual are available <a href="https://github.com/xia-whennig/PNXL-Releases"> here </a>   </li>
-				<li> A preliminary product flyer is <a href="XIA-Pixie-Net-XL-FLYER-2022-10-07.pdf"> here </a>   </li>
-				<li> A recent paper describing the Pixie-Net XL's timing performance is <a href="XIA_RT2022_CR.pdf"> here </a> 
-				<p> <img src="timing_bars.jpg" width="400" height=auto alt="timing bars">
-				</li>
-			</ul>
 
-			<b style="font-size: 14px"> Input Connector Options </b>
-			<ul>
-				<li> <b> 8-channel, 14bit, 125 MHz variant: 8 SMB connectors  </b> <br>
-				This type of SMB inputs is used for all 8-channel versions of the Pixie-Net XL
-					<p> <img src="PNXL_front_DB01.jpg" width="300" height=auto alt="8-14-125 input connectors">	 
-				</li>
-				<li> <b> 16-channel, 14bit, 250 MHz variant: 0.1 in headers </b> <br>
-				In most cases, input connections can be made with a 0.1 in ribbon cable 
-				(available commercially as plain, shielded, or twisted pair). <br> 
-				<p> <img src="PNXL_front_DB04Ca.jpg" width="300" height=auto alt="16-14-125 input connectors">	  <br> <br> 
-				In some cases, adapters to coaxial cables are desired. 
-				XIA can provide <a href="https://xia-whennig.github.io/pages/mezz.html"> MEZZ adapter Boards </a> and special front panels for this purpose.	<br> <br>
-				
-				<u> MEZZ03:</u>
-				The picture below shows the Pixie-Net XL with MEZZ03 integrated in the right side of the front panel: 
-				Coaxial cables can connect to MEZZ03's row of SMB connectors and a short ribbon cable 
-				can make the connection from MEZZ03's 0.1 in header (black) to the Pixie-Net XL 0.1 in input header (white) <br> 
-				This configuration is mechanically the most stable and allows quick changes from ribbon cable to SMB cables. <br> <br>
-				
-				<u> MEZZ04:</u>
-				MEZZ04 can attach to the Pixie-Net XL on the outside as shown for the left input header. Adapters for the GRF1 ganged cable to
-		      other coaxial cable styles are commercially available 
-				<p> <img src="PNXL_front_DB04C_MEZZ03_04a.jpg" width="300" height=auto alt="16-14-250 input connectors">	 
-				</li>
-
-				<li> <b> [Experimental] 16-channel, 14bit, 250 MHz variant with differential inputs: micro HDMI </b> <br>
-				Commercially available HDMI cables can be used to bring in differential signals. <br>
-				Contact XIA for adapters from single ended signals to differential HDMI.  <br>
-				Also available soon with 0.1 in headers. <br>
-				<p> <img src="PNXL_front_DB02A.jpg" width="300" height=auto alt="16-14-250 input connectors, differential">	 
-				</li>
-			</ul>
-
-
-
-		</div>
 
 		<div class="w3-card-2">  <a name=WRforPNXL"></a>
 			<h2> Network Time Synchronization for Radiation Detectors  </h2>
